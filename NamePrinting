@@ -26,7 +26,13 @@ static class Test
 
         foreach (string name in names)
         {
-            Console.Write("{0} ", name);
+            if (name == "Joe")
+            {
+                Console.Write("{0} (rhymes with shmoe), ", name);
+            } else 
+            {
+                Console.Write("{0}, ", name);
+            }
         }
         Console.WriteLine ("\n The program has finished. Press enter to terminate the program.");
         Console.ReadLine();
