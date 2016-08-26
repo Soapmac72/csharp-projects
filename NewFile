@@ -1,6 +1,0 @@
-using System;
-
-class test
-{
-  Console.WriteLine("Yo");
-}
