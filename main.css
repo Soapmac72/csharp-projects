@@ -2,3 +2,7 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #b3b3ff;
 }
+
+title {
+    display: none;
+}
