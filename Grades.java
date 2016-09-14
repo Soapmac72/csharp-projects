@@ -1,55 +1,45 @@
 import java.util.Scanner;
 
-class Grades
+class Main
 {
     public static void main(String[] args)
     {
         Scanner scan = new Scanner(System.in);
 
-        String testOne;
-        String testTwo;
-        String testThree;
+        double testOne = 0.0;
+        double testTwo = 0.0;
+        double testThree = 0.0;
 
-        String quizOne;
-        String quizTwo;
+        int quizOne = 0;
+        int quizTwo = 0;
 
-        String homeWork;
+        double homeWork = 0.0;
 
-        double testAverage;
-        double quizAverage;
+        double testAverage = 0.0;
+        double quizAverage = 0.0;
 
-        System.out.println("Please enter your first test grade.");
-        testOne = scan.nextLine();
-        double testOneScore = Double.parseDouble(testOne);
-        System.out.println("Now enter your second test grade.");
-        testTwo = scan.nextLine();
-        double testTwoScore = Double.parseDouble(testTwo);
-        System.out.println("Finally, enter your third test");
-        testThree = scan.nextLine();
-        double testThreeScore = Double.parseDouble(testThree);
-        System.out.println("Test 1: " + testOne);
-        System.out.println("Test 2: " + testTwo);
-        System.out.println("Test 3: " + testThree);
-
+        System.out.print("Please enter your test grades.\nTest 1: ");
+        testOne = scan.nextDouble();
+        System.out.print("\nTest 2: ");
+        testTwo = scan.nextDouble();
+        System.out.print("\nTest 3: "); 
+        testThree = scan.nextDouble();
+        
         System.out.println();
 
-        System.out.println("Please enter your first quiz grade.");
-        quizOne = scan.nextLine();
-        int quizOneScore = Integer.parseInt(quizOne);
-        System.out.println("Now enter your second quiz grade.");
-        quizTwo = scan.nextLine();
-        int quizTwoScore = Integer.parseInt(quizTwo);
-        System.out.println("Quiz 1: " + quizOne);
-        System.out.println("Quiz 2: " + quizTwo);
+        System.out.print("Please enter your quiz grades.\nQuiz 1: ");
+        quizOne = scan.nextInt();
+        System.out.print("\nQuiz 2: ");
+        quizTwo = scan.nextInt();
 
         System.out.println();
 
         System.out.println("Please enter your homework average.");
-        homeWork = scan.nextLine();
-        double homeWorkAvg = Double.parseDouble(homeWork);
+        System.out.print("\nHomework: ");
+        homeWork = scan.nextDouble();
 
-        testAverage = (testOneScore + testTwoScore + testThreeScore)/ 3;
-        quizAverage = ((double)quizOneScore + (double)quizTwoScore)/ 2;
+        testAverage = (testOne + testTwo + testThree)/ 3;
+        quizAverage = ((double)quizOne + (double)quizTwo)/ 2;
 
         System.out.println("Test average: " + Double.toString(testAverage));
         System.out.println("Quiz average: " + Double.toString(quizAverage));
