@@ -1,4 +1,10 @@
-ray interactRay;
+/* Need two rays, one for interactions and one for shooting
+
+
+
+Ray interactRay;
+Ray shootingRay;
+
 if interactRay hits object tagged item
 lookingAtItem = true;
 
