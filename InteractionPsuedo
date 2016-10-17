@@ -1,0 +1,9 @@
+ray interactRay;
+if interactRay hits object tagged item
+lookingAtItem = true;
+
+if lookingAtItem = true;
+print "Press 'E' to pick-up";
+if E is pressed
+destroy item;
+add item to inventory;
